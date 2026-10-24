@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #F2F0EB;
+    --text-primary: #171717;
+    --text-secondary: #6B6B65;
+    --bg-dark: #171717;
+    --text-light: #F5F3EE;
+    --earth-accent: #8A7E72;
+    --border-light: rgba(23, 23, 23, 0.12);
+    --border-dark: rgba(245, 243, 238, 0.15);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    background-color: #F2F0EB;
+    color: #171717;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: #F2F0EB;
+    color: #171717;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  /* Architectural display headings font */
+  .font-editorial {
+    font-family: 'Syne', sans-serif;
+    letter-spacing: -0.04em;
+    line-height: 0.92;
+  }
+
+  .font-mono-subtle {
+    font-family: 'Space Grotesk', monospace;
+    letter-spacing: 0.08em;
+  }
+
+  ::selection {
+    background-color: #171717;
+    color: #F5F3EE;
+  }
+}
+
+/* Lenis smooth scrolling rules */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #F2F0EB;
+}
+::-webkit-scrollbar-thumb {
+  background: #8A7E72;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #171717;
+}
+
+/* Subtle architectural hover line animations */
+.hover-editorial-line {
+  position: relative;
+  display: inline-block;
+}
+.hover-editorial-line::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-editorial-line:hover::after {
+  width: 100%;
+}
+
+/* Image reveal clip path utilities */
+.clip-path-inset-0 {
+  clip-path: inset(0% 0% 0% 0%);
+}
+.clip-path-inset-hidden {
+  clip-path: inset(100% 0% 0% 0%);
+}
+
+/* Architectural Monograph (Noir Monochrome) Mode */
+html.mono-mode img {
+  filter: grayscale(100%) contrast(1.12) brightness(0.96) !important;
+  transition: filter 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+html.mono-mode {
+  --earth-accent: #6B6B65;
+}
+
