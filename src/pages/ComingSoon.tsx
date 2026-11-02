@@ -94,7 +94,7 @@ export const ComingSoon: React.FC = () => {
           </h1>
 
           <p className="text-[#F5F3EE]/75 text-sm sm:text-base font-light leading-relaxed">
-            Drawing from Ethiopia’s monumental stone traditions, volcanic geology, and contemporary living, PROLIQ shapes enduring private residences and cultural interiors. Our full archive is currently in production.
+            PROLIQ designs modern residences and interiors inspired by Ethiopia’s rich heritage and natural landscape. Our full portfolio is coming soon.
           </p>
 
           {/* Interactive Call-to-Action: Early Portfolio Dossier Request */}
