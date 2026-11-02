@@ -97,15 +97,15 @@ export const ComingSoon: React.FC = () => {
             PROLIQ designs modern residences and interiors inspired by Ethiopia’s rich heritage and natural landscape. Our full portfolio is coming soon.
           </p>
 
-          {/* Interactive Call-to-Action: Early Portfolio Dossier Request */}
+          {/* Interactive Call-to-Action: Get In Touch */}
           <div className="pt-2">
             <p className="font-mono-subtle text-[11px] tracking-[0.2em] text-[#8A7E72] uppercase mb-2">
-              REQUEST EARLY COMMISSION DOSSIER
+              GET IN TOUCH
             </p>
             {submitted ? (
               <div className="flex items-center gap-3 p-3.5 bg-white/5 border border-white/20 text-xs font-mono-subtle text-[#F5F3EE]">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>Thank you. Our studio partner will share our initial portfolio dossier.</span>
+                <span>Thank you. We will be in touch with you shortly.</span>
               </div>
             ) : (
               <form onSubmit={handleNotifySubmit} className="flex flex-col sm:flex-row gap-2">
@@ -121,7 +121,7 @@ export const ComingSoon: React.FC = () => {
                   type="submit"
                   className="px-5 py-2.5 bg-[#F5F3EE] text-[#111111] hover:bg-[#8A7E72] hover:text-[#F5F3EE] transition-all font-mono-subtle text-[11px] tracking-widest uppercase font-semibold cursor-pointer whitespace-nowrap flex items-center justify-center gap-1.5"
                 >
-                  <span>REQUEST DOSSIER</span>
+                  <span>GET IN TOUCH</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
               </form>
