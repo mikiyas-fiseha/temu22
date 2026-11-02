@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, Mail, Globe, MapPin, CheckCircle2, ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
+import { Mail, MapPin, CheckCircle2, ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 
 const ETHIOPIAN_WORKS = [
   {
