@@ -69,11 +69,9 @@ export const ComingSoon: React.FC = () => {
           </span>
         </div>
 
-        <div className="flex items-center gap-3 font-mono-subtle text-[11px] tracking-widest text-[#8A7E72] uppercase">
+        <div className="flex items-center gap-2.5 font-mono-subtle text-[11px] tracking-widest text-[#8A7E72] uppercase">
           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-          <span className="text-[#F5F3EE]">ADDIS ABABA</span>
-          <span className="text-[#8A7E72]/60 hidden sm:inline">|</span>
-          <span className="text-[#8A7E72] hidden sm:inline">DIGITAL ARCHIVE IN PRODUCTION</span>
+          <span className="text-[#8A7E72]">DIGITAL ARCHIVE IN PRODUCTION</span>
         </div>
       </header>
 
@@ -82,11 +80,7 @@ export const ComingSoon: React.FC = () => {
         
         {/* Left Column (5 Cols): Typography, Manifesto & Interactive CTA */}
         <div className="lg:col-span-5 flex flex-col gap-6">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#8A7E72]/15 border border-[#8A7E72]/30 w-fit">
-            <span className="font-mono-subtle text-[10px] tracking-[0.25em] text-[#8A7E72] uppercase font-semibold">
-              ETHIOPIAN TECTONICS // 2026
-            </span>
-          </div>
+
 
           <h1 className="font-editorial text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#F5F3EE] leading-[0.96] uppercase">
             ROOTED IN ETHIOPIA.<br />
